@@ -53,7 +53,7 @@ background:linear-gradient(90deg,#2E8B57,#4CAF50);
 color:white;border:none;border-radius:10px;
 height:50px;width:100%;font-size:18px;font-weight:bold;}
 .result-box{
-background:#E8F5E9;padding:15px;border-radius:10px;border-left:6px solid green;}
+background:#1E1E1E;padding:15px;border-radius:10px;border-left:6px solid green;}
 </style>
 """, unsafe_allow_html=True)
 
