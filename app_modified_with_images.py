@@ -3,14 +3,6 @@ import streamlit as st
 import pickle
 import numpy as np
 
-# Debug information
-st.write("Current directory:", os.getcwd())
-st.write("Files in current directory:", os.listdir("."))
-
-if os.path.exists("images"):
-    st.write("Images folder:", os.listdir("images"))
-else:
-    st.error("Images folder not found!")
 
 # Banner image
 st.image("images/banner.jpg", width="stretch")
@@ -51,35 +43,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.metric("🌾 Crops", "22")
 
-with col2:
-    st.metric("🤖 Model", "Random Forest")
 
-with col3:
-    st.metric("📊 Features", "7")
-
-st.markdown("""
-<div class="info-card">
-<h3>📌 About the Project</h3>
-
-This application recommends the best crop using:
-
-✔ Nitrogen (N)
-
-✔ Phosphorus (P)
-
-✔ Potassium (K)
-
-✔ Temperature
-
-✔ Humidity
-
-✔ Soil pH
-
-✔ Rainfall
-
-👇 Enter the values below and click <b>🌾 Predict Crop</b>.
-</div>
-""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
